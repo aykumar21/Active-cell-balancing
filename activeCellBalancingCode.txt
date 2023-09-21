@@ -1,0 +1,11 @@
+function [s1,s2] = fcn(SOC1,SOC2,PWM)
+if SOC2<SOC1
+    s1=PWM
+    s2=0
+elseif SOC1<SOC2
+    s1=0
+    s2=PWM
+else
+    s1=0
+    s2=0
+end
